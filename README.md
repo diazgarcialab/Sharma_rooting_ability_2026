@@ -20,12 +20,11 @@ exceptions listed under **What is not included**.
 - **GEMMA association output** (`02_clean_data/gwas_results/*.assoc.txt`, about 390 MB
   per trait) exceeds GitHub's file limits. It is regenerated from the VCF with
   `01_code/gemma_rooting.sh`, which documents the PLINK and GEMMA commands and
-  filters used. The p < 10^-4 extracts that support the reported lead SNPs are
-  included in `02_clean_data/revision/`.
+  filters used.
 - **Sequencing reads** are in the NCBI Sequence Read Archive under BioProjects
   PRJNA731597, PRJNA842753 and PRJNA984685. The joint-called VCF is derived from these
   as described in the Methods.
 - **Reference genome and annotation** (*V. girdiana* SC2 v1.0, haplotype 1) are
-  available from www.grapegenomics.com and belong in `00_raw_data/genomic_resources/`.
+  available from www.grapegenomics.com.
 - **WorldClim 2.1 rasters** are downloaded on first run by `02_figure_01_accession_map.R`
   into `00_raw_data/spatial_cache/`.
